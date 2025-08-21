@@ -29,9 +29,9 @@ const Project: React.FC<ProjectProps> = ({ project, link, description, image }) 
           src={image}
           height={192}
           width={192}
-          className="block object-cover rounded h-64 w-64 lg:h-48 lg:w-48 transition duration-300"
+          className="block object-cover rounded h-64 w-64 transition duration-300"
           loading="lazy"
-          quality={50}
+          quality={100}
         />
         <div
           className="absolute bottom-2 left-2 right-2 z-20

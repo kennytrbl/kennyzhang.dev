@@ -6,8 +6,4 @@ The goal was to create a visually appealing and accessible website that effectiv
 
 ## Tech Stack
 
-Next.js, TypeScript, Tailwind CSS, Vercel, Supabase
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+Next.js, React, TypeScript, Tailwind CSS, Vercel, Supabase

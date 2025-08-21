@@ -118,7 +118,7 @@ function Contact() {
 
   return (
     <div className="mt-8 w-full xl:float-right xl:w-[35%]">
-      <p id="contact" className="font-bold leading-none mb-4 text-4xl tracking-tight">
+      <p id="contact" className="font-bold leading-none mb-6 text-4xl tracking-tight">
         Contact
       </p>
       <form ref={form} onSubmit={sendEmail} className="flex flex-col max-w-[500px] pb-12 w-full">

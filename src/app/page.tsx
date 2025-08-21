@@ -5,7 +5,6 @@ import Carousel from "./components/carousel";
 import ProjectList from "./components/project-panel";
 import PressPanel from "./components/press-panel";
 import Contact from "./components/contact";
-import Socials from "./components/socials";
 
 export default function Home() {
   return (
@@ -15,7 +14,7 @@ export default function Home() {
         <Carousel />
       </div>
       <ProjectList />
-      <div className="flex flex-col lg:flex-row gap-8">
+      <div className="flex flex-col lg:flex-row mt-8 gap-8">
         <PressPanel />
         <Contact />
       </div>

@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
         pathname: "**",
         search: "",
       },
+      {
+        protocol: "https",
+        hostname: "xysaswoufwhmmdoyufwh.supabase.co",
+        port: "",
+        pathname: "/storage/v1/object/public/kennytrbl/**",
+      },
     ],
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 60,

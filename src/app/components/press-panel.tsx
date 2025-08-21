@@ -3,7 +3,7 @@ import Press from "./press";
 function PressPanel() {
   return (
     <div className="mt-6 xl:float-left w-full xl:w-[60%]">
-      <p id="press" className="font-bold leading-none mb-4 text-4xl tracking-tight">
+      <p id="press" className="font-bold leading-none mb-6 text-4xl tracking-tight">
         Press
       </p>
       <Press

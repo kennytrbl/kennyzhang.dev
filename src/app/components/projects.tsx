@@ -29,7 +29,7 @@ const Project: React.FC<ProjectProps> = ({ project, link, description, image }) 
           src={image}
           height={192}
           width={192}
-          className="block object-cover rounded h-58 w-58 transition duration-300"
+          className="block object-cover rounded h-64 w-64 lg:h-48 lg:w-48 transition duration-300"
           loading="lazy"
           quality={100}
         />

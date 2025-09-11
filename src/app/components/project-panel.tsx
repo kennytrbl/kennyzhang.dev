@@ -56,8 +56,8 @@ function ProjectList() {
   }
 
   return (
-    <div className="mt-8">
-      <p className="font-bold mb-2 text-4xl">Projects</p>
+    <div className="mt-6 sm:mt-8">
+      <p className="font-bold mb-2 text-2xl sm:text-3xl lg:text-4xl">Projects</p>
       <p className="mb-4">
         More projects on{" "}
         <a

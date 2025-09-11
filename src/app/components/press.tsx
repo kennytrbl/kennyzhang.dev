@@ -18,7 +18,7 @@ const Press: React.FC<PressProps> = ({ items }) => {
         if (item.type === "youtube") {
           return (
             <div key={idx} className="flex justify-center">
-              <div className="aspect-[16/10] lg:w-[320px] max-w-full">
+              <div className="aspect-[16/10] lg:w-[300px] max-w-full">
                 <iframe
                   src={item.url}
                   title={item.title || "YouTube video"}

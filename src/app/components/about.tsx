@@ -1,13 +1,13 @@
 function About() {
   return (
-    <div className="text-base w-full lg:w-[40%]">
-      <p className="font-bold mb-4 text-4xl">Hi,</p>
+    <div className="text-sm sm:text-base w-full lg:w-[40%]">
+      <p className="font-bold mb-3 sm:mb-4 text-2xl sm:text-3xl lg:text-4xl">Hi,</p>
       <p>I am Kenny Zhang, a UC San Diego Math & CS graduate and Apple Specialist in San Francisco.</p>
-      <p className="mb-4 mt-4">
+      <p className="mb-3 sm:mb-4 mt-3 sm:mt-4">
         I have worked across software engineering, cloud infrastructure, and QA automation through internships at
         Quicken, and led technical operations for the Chinatown Volunteer Coalition, supporting 60+ small businesses.
       </p>
-      <p className="mb-4 mt-4">
+      <p className="mb-3 sm:mb-4 mt-3 sm:mt-4">
         I am seeking opportunities in software engineering opportunities where I can contribute to building scalable
         systems, collaborate with strong teams, and continue learning and growing. If you are hiring, please check out
         my{" "}

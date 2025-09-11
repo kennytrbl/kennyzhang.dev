@@ -117,33 +117,33 @@ function Contact() {
   };
 
   return (
-    <div className="mt-8 w-full xl:float-right xl:w-[35%]">
-      <p id="contact" className="font-bold leading-none mb-6 text-4xl tracking-tight">
+    <div className="mt-6 sm:mt-8 w-full xl:float-right xl:w-[35%]">
+      <p id="contact" className="font-bold leading-none mb-4 sm:mb-6 text-2xl sm:text-3xl lg:text-4xl tracking-tight">
         Contact
       </p>
-      <form ref={form} onSubmit={sendEmail} className="flex flex-col max-w-[500px] pb-12 w-full">
-        <label className="mb-2 mr-2 whitespace-nowrap">Name</label>
+      <form ref={form} onSubmit={sendEmail} className="flex flex-col max-w-full sm:max-w-[500px] pb-8 sm:pb-12 w-full">
+        <label className="mb-1 sm:mb-2 mr-2 text-sm sm:text-base whitespace-nowrap">Name</label>
         <input
           type="text"
           name="user_name"
-          className="border border-gray-300 flex-1 p-1 mb-4 mr-2 text-black transition-colors focus:border-blue-500 focus:outline-none bg-white"
+          className="border border-gray-300 flex-1 p-2 sm:p-3 mb-3 sm:mb-4 mr-0 sm:mr-2 text-sm sm:text-base text-black transition-colors focus:border-blue-500 focus:outline-none bg-white rounded"
         />
-        <label className="mb-2 mr-2 whitespace-nowrap">Email</label>
+        <label className="mb-1 sm:mb-2 mr-2 text-sm sm:text-base whitespace-nowrap">Email</label>
         <input
           type="email"
           name="user_email"
-          className="border border-gray-300 flex-1 p-1 mb-4 mr-2 text-black transition-colors focus:border-blue-500 focus:outline-none bg-white"
+          className="border border-gray-300 flex-1 p-2 sm:p-3 mb-3 sm:mb-4 mr-0 sm:mr-2 text-sm sm:text-base text-black transition-colors focus:border-blue-500 focus:outline-none bg-white rounded"
         />
-        <label className="mb-2 mr-2 whitespace-nowrap">Message</label>
+        <label className="mb-1 sm:mb-2 mr-2 text-sm sm:text-base whitespace-nowrap">Message</label>
         <textarea
           name="message"
-          className="border border-gray-300 flex-1 flex-basis-100 p-1 mb-4 mr-2 min-h-[100px] resize-none text-black transition-colors focus:border-blue-500 focus:outline-none bg-white"
+          className="border border-gray-300 flex-1 flex-basis-100 p-2 sm:p-3 mb-3 sm:mb-4 mr-0 sm:mr-2 min-h-[80px] sm:min-h-[100px] resize-none text-sm sm:text-base text-black transition-colors focus:border-blue-500 focus:outline-none bg-white rounded"
         />
         <input
           type="submit"
           value={isSubmitting ? "Sending..." : cooldownTime > 0 ? `Wait ${cooldownTime}s` : "Send"}
           disabled={isSubmitting || cooldownTime > 0}
-          className={`cursor-pointer p-1 rounded text-white transition-colors w-[100px] ${
+          className={`cursor-pointer p-2 sm:p-3 rounded text-sm sm:text-base text-white transition-colors w-full sm:w-[120px] ${
             isSubmitting || cooldownTime > 0 ? "bg-gray-400 cursor-not-allowed" : "bg-[#007a8e] hover:bg-[#009999]"
           }`}
         />

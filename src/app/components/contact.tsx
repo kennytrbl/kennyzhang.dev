@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import emailjs from "@emailjs/browser";
 import Socials from "./socials";
 
 function Contact() {
@@ -73,7 +72,7 @@ function Contact() {
     elements: EmailFormElements;
   }
 
-  const sendEmail = (e: React.FormEvent<EmailForm>) => {
+  const sendEmail = async (e: React.FormEvent<EmailForm>) => {
     e.preventDefault();
 
     if (!validateInputs()) {
@@ -91,29 +90,28 @@ function Contact() {
 
     setIsSubmitting(true);
 
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        form.current!,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-      )
-      .then(
-        () => {
-          alert("Email sent successfully!");
-          form.current?.reset();
-          const now = Date.now();
-          setLastSubmitTime(now);
-          localStorage.setItem(STORAGE_KEY, now.toString());
-          setCooldownTime(Math.ceil(RATE_LIMIT_DELAY / 1000));
-        },
-        () => {
-          alert("Failed to send email. Please try again.");
-        }
-      )
-      .finally(() => {
-        setIsSubmitting(false);
+    try {
+      const formData = new FormData(form.current!);
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
       });
+
+      if (response.ok) {
+        alert("Email sent successfully!");
+        form.current?.reset();
+        const now = Date.now();
+        setLastSubmitTime(now);
+        localStorage.setItem(STORAGE_KEY, now.toString());
+        setCooldownTime(Math.ceil(RATE_LIMIT_DELAY / 1000));
+      } else {
+        alert("Failed to send email. Please try again.");
+      }
+    } catch (error) {
+      alert("An error occurred. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -122,6 +120,7 @@ function Contact() {
         Contact
       </p>
       <form ref={form} onSubmit={sendEmail} className="flex flex-col max-w-full sm:max-w-[500px] pb-8 sm:pb-12 w-full">
+        <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORM_PUBLIC_KEY} />
         <label className="mb-1 sm:mb-2 mr-2 text-sm sm:text-base whitespace-nowrap">Name</label>
         <input
           type="text"

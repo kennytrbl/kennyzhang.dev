@@ -2,7 +2,10 @@ function About() {
   return (
     <div className="text-sm sm:text-base w-full lg:w-[40%]">
       <p className="font-bold mb-3 sm:mb-4 text-2xl sm:text-3xl lg:text-4xl">Hi,</p>
-      <p>I am Kenny Zhang, a UC San Diego Math & CS graduate and Apple Specialist in San Francisco.</p>
+      <p>
+        I am Kenny Zhang, a UC San Diego Math & CS graduate, Apple Specialist in San Francisco, and Chief of Systems and
+        Operations at the Chinatown Volunteer Coalition.
+      </p>
       <p className="mb-3 sm:mb-4 mt-3 sm:mt-4">
         I have worked across software engineering, cloud infrastructure, and QA automation through internships at
         Quicken, and led technical operations for the Chinatown Volunteer Coalition, supporting 60+ small businesses.

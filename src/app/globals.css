@@ -9,3 +9,11 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+img,
+[class*="image"],
+[class*="img"] {
+  filter: none !important;
+  background: none !important;
+  color: inherit !important;
+}

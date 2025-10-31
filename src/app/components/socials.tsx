@@ -9,7 +9,14 @@ function Socials() {
         className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#161b22] hover:bg-[#23272e] transition-colors shadow text-[#dde6ed] text-sm sm:text-lg font-semibold"
       >
         <span>Github</span>
-        <Image className="invert w-4 h-4 sm:w-6 sm:h-6" src="/github.svg" alt="Github logo" width={24} height={24} priority />
+        <Image
+          className="invert w-4 h-4 sm:w-6 sm:h-6"
+          src="/github.svg"
+          alt="Github logo"
+          width={24}
+          height={24}
+          priority
+        />
       </a>
       <a
         href="https://www.linkedin.com/in/kennyzhang5/"
@@ -17,7 +24,14 @@ function Socials() {
         className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#0a66c2] hover:bg-[#004182] transition-colors shadow text-[#dde6ed] text-sm sm:text-lg font-semibold"
       >
         <span>LinkedIn</span>
-        <Image className="w-4 h-4 sm:w-6 sm:h-6" src="/linkedin.svg" alt="LinkedIn logo" width={24} height={24} priority />
+        <Image
+          className="w-4 h-4 sm:w-6 sm:h-6"
+          src="/linkedin.svg"
+          alt="LinkedIn logo"
+          width={24}
+          height={24}
+          priority
+        />
       </a>
       <a
         href="https://twitter.com/_kennyzhang"
@@ -25,15 +39,14 @@ function Socials() {
         className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#1da1f2] hover:bg-[#0d8ddb] transition-colors shadow text-[#dde6ed] text-sm sm:text-lg font-semibold"
       >
         <span>Twitter</span>
-        <Image className="w-4 h-4 sm:w-6 sm:h-6" src="/twitter.svg" alt="Twitter logo" width={24} height={24} priority />
-      </a>
-      <a
-        href="https://bsky.app/profile/kennyzhang.bsky.social"
-        target="_blank"
-        className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#0066ff] hover:bg-[#004bb5] transition-colors shadow text-[#dde6ed] text-sm sm:text-lg font-semibold"
-      >
-        <span>Bluesky</span>
-        <Image className="invert w-4 h-4 sm:w-6 sm:h-6" src="/bluesky.svg" alt="Bluesky logo" width={24} height={24} priority />
+        <Image
+          className="w-4 h-4 sm:w-6 sm:h-6"
+          src="/twitter.svg"
+          alt="Twitter logo"
+          width={24}
+          height={24}
+          priority
+        />
       </a>
       <a
         href="https://stats.fm/kenny"

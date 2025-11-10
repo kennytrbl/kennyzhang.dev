@@ -136,7 +136,7 @@ function Contact() {
         <label className="mb-1 sm:mb-2 mr-2 text-sm sm:text-base whitespace-nowrap">Message</label>
         <textarea
           name="message"
-          className="border border-gray-300 flex-1 flex-basis-100 p-2 sm:p-3 mb-3 sm:mb-4 mr-0 sm:mr-2 min-h-[80px] sm:min-h-[100px] resize-none text-sm sm:text-base text-black transition-colors focus:border-blue-500 focus:outline-none bg-white rounded"
+          className="border border-gray-300 flex-1 flex-basis-100 p-2 sm:p-3 mb-3 sm:mb-4 mr-0 sm:mr-2 min-h-20 sm:min-h-[100px] resize-none text-sm sm:text-base text-black transition-colors focus:border-blue-500 focus:outline-none bg-white rounded"
         />
         <input
           type="submit"

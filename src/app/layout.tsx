@@ -7,6 +7,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const notoSans = Noto_Sans({
   subsets: ["latin"],
   variable: "--font-noto-sans",
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -22,6 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://xysaswoufwhmmdoyufwh.supabase.co" crossOrigin="anonymous" />
+        <link
+          rel="preload"
+          as="image"
+          href="https://xysaswoufwhmmdoyufwh.supabase.co/storage/v1/object/public/kennytrbl/volunteering.webp"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={`${notoSans.className} antialiased`}>
         {children}
         <Analytics />

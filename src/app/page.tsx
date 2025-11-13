@@ -13,7 +13,9 @@ export default function Home() {
         <About />
         <Carousel />
       </div>
-      <ProjectList />
+      <div className="mt-6">
+        <ProjectList />
+      </div>
       <div className="flex flex-col lg:flex-row mt-6 sm:mt-8 gap-4 sm:gap-6 lg:gap-8">
         <PressPanel />
         <Contact />

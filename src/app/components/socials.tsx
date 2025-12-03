@@ -4,9 +4,18 @@ function Socials() {
   return (
     <div className="flex flex-wrap mt-3 sm:mt-4 gap-2 sm:gap-4">
       <a
+        href="mailto:kennyzhang418@gmail.com
+        ?subject=Professional%20Inquiry%20Regarding%20Your%20Work"
+        target="_blank"
+        className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#0b5ed7] hover:bg-[#2a72db] transition-colors shadow text-[#dde6ed] text-lg font-semibold"
+      >
+        <span>Email</span>
+        <Image className="w-4 h-4 sm:w-6 sm:h-6" src="/email.svg" alt="Email logo" width={24} height={24} priority />
+      </a>
+      <a
         href="https://github.com/kennytrbl"
         target="_blank"
-        className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#161b22] hover:bg-[#23272e] transition-colors shadow text-[#dde6ed] text-sm sm:text-lg font-semibold"
+        className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#161b22] hover:bg-[#23272e] transition-colors shadow text-[#dde6ed] text-lg font-semibold"
       >
         <span>Github</span>
         <Image
@@ -21,7 +30,7 @@ function Socials() {
       <a
         href="https://www.linkedin.com/in/kennyzhang5/"
         target="_blank"
-        className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#0a66c2] hover:bg-[#004182] transition-colors shadow text-[#dde6ed] text-sm sm:text-lg font-semibold"
+        className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#0a66c2] hover:bg-[#004182] transition-colors shadow text-[#dde6ed] text-lg font-semibold"
       >
         <span>LinkedIn</span>
         <Image
@@ -36,7 +45,7 @@ function Socials() {
       <a
         href="https://twitter.com/_kennyzhang"
         target="_blank"
-        className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#1da1f2] hover:bg-[#0d8ddb] transition-colors shadow text-[#dde6ed] text-sm sm:text-lg font-semibold"
+        className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#1da1f2] hover:bg-[#0d8ddb] transition-colors shadow text-[#dde6ed] text-lg font-semibold"
       >
         <span>Twitter</span>
         <Image
@@ -51,7 +60,7 @@ function Socials() {
       <a
         href="https://stats.fm/kenny"
         target="_blank"
-        className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#1ed760] hover:bg-[#169c46] transition-colors shadow text-[#dde6ed] text-sm sm:text-lg font-semibold"
+        className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-[#1ed760] hover:bg-[#169c46] transition-colors shadow text-[#dde6ed] text-lg font-semibold"
       >
         <span>Stats.fm</span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 sm:w-6 sm:h-6">

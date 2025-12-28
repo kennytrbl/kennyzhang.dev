@@ -44,3 +44,5 @@ next-env.d.ts
 
 pnpm-lock.yaml
 pnpm-workspace.yaml
+
+.vscode

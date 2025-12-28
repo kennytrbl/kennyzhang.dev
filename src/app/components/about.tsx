@@ -8,7 +8,8 @@ function About() {
       </p>
       <p className="mb-3 sm:mb-4 mt-3 sm:mt-4">
         I have worked across software engineering, cloud infrastructure, and QA automation through internships at
-        Quicken, and led technical operations for the Chinatown Volunteer Coalition, supporting 60+ small businesses.
+        Quicken, delivered high-impact customer-focused solutions as an Apple Specialist, and led technical operations
+        for the Chinatown Volunteer Coalition, supporting 60+ small businesses.
       </p>
       <p className="mb-3 sm:mb-4 mt-3 sm:mt-4">
         I am seeking opportunities in software engineering opportunities where I can contribute to building scalable

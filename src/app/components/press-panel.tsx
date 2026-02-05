@@ -9,9 +9,10 @@ function PressPanel() {
       <Press
         items={[
           { type: "youtube", url: "https://www.youtube.com/embed/2NWVuugbcYs" },
-          { type: "youtube", url: "https://www.youtube.com/embed/llF84Qv6pIQ" },
+          // { type: "youtube", url: "https://www.youtube.com/embed/llF84Qv6pIQ" },
           { type: "youtube", url: "https://www.youtube.com/embed/svMwJHic-X0" },
           { type: "youtube", url: "https://www.youtube.com/embed/77zeZc1OvxE" },
+          { type: "youtube", url: "https://www.youtube.com/embed/LfIaujE0-m4" },
           {
             type: "article",
             title: "USA TODAY",

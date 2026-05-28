@@ -1,5 +1,6 @@
 import "./index.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -23,6 +24,7 @@ export default function App() {
       </main>
       <Footer />
       <Analytics />
+      <SpeedInsights />
     </>
   );
 }

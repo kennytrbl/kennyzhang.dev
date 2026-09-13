@@ -19,7 +19,6 @@ export default function App() {
         <Gallery />
         <Experience />
         <Projects />
-        <Press />
         <Contact />
       </main>
       <Footer />

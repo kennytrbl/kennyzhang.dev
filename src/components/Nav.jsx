@@ -5,7 +5,6 @@ const navLinks = [
   { label: "Gallery", href: "#gallery" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
-  { label: "Press", href: "#press" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -102,15 +101,24 @@ export default function Nav() {
     <>
       <nav style={{ ...styles.nav, ...(scrolled ? styles.navScrolled : {}) }}>
         <div style={styles.inner}>
-          <a href="#about" style={styles.logo}>Kenny Zhang</a>
+          <a href="#about" style={styles.logo}>
+            Kenny Zhang
+          </a>
 
           {!isMobile && (
             <ul style={styles.links}>
               {navLinks.map((l) => (
                 <li key={l.label}>
-                  <a href={l.href} style={styles.link}
-                    onMouseEnter={e => e.target.style.color = "var(--color-text)"}
-                    onMouseLeave={e => e.target.style.color = "var(--color-text-muted)"}>
+                  <a
+                    href={l.href}
+                    style={styles.link}
+                    onMouseEnter={(e) =>
+                      (e.target.style.color = "var(--color-text)")
+                    }
+                    onMouseLeave={(e) =>
+                      (e.target.style.color = "var(--color-text-muted)")
+                    }
+                  >
                     {l.label}
                   </a>
                 </li>

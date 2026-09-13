@@ -115,7 +115,6 @@ const socials = [
   },
   { label: "GitHub", href: "https://github.com/kennytrbl" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/kennyzhang5/" },
-  { label: "Twitter", href: "https://twitter.com/_kennyzhang" },
 ];
 
 export default function Contact() {
@@ -199,7 +198,8 @@ export default function Contact() {
       <h2 style={styles.heading}>Let's talk.</h2>
       <p style={styles.sub}>
         Open to software engineering opportunities, collaborations, and
-        conversations about community tech. Reach out — I read every message.
+        conversations about community & tech. Feel free to reach out, I read
+        every message.
       </p>
 
       {sent ? (
